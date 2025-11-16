@@ -1,4 +1,4 @@
-# components/kpi.py
+# components/visualize.py
 import streamlit as st
 
 def kpi_card(label, value, delta=None):
@@ -12,3 +12,4 @@ def kpi_row(kpis: dict):
                 st.metric(label, value[0], value[1])
             else:
                 st.metric(label, value)
+                
